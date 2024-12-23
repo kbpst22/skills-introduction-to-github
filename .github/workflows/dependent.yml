@@ -22,8 +22,8 @@ jobs:
     steps:
     - name: Dependant is Running
       run: |
-        echo "Completed job 2, but triggering failure"
-        exit 1
+        echo "Completed job 2 "
+       
 
   job3:
     name: Job 3
@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Will never run
+    - name: job 3 will run after remove exit 1  from job 2
       run: |
         echo "If you can read this, the experiment failed"
 
