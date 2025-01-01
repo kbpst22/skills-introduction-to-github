@@ -2,6 +2,7 @@
 
 name: Experiment
 on: #[push]
+   workflow_dispatch
 
 jobs:
   job1:
